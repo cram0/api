@@ -35,18 +35,34 @@ api.get("/hello", (req, res) => {
 });
 
 api.post("/sum", (req, res) => {
+	if (isNaN(req.body.a) || isNaN(req.body.b)) {
+		return res.status(400).send("Bad request");
+	}
+
 	return res.send(`${req.body.a + req.body.b}`);
 });
 
 api.post("/sub", (req, res) => {
+	if (isNaN(req.body.a) || isNaN(req.body.b)) {
+		return res.status(400).send("Bad request");
+	}
+
 	return res.send(`${req.body.a - req.body.b}`);
 });
 
 api.post("/mul", (req, res) => {
+	if (isNaN(req.body.a) || isNaN(req.body.b)) {
+		return res.status(400).send("Bad request");
+	}
+
 	return res.send(`${req.body.a * req.body.b}`);
 });
 
 api.post("/div", (req, res) => {
+	if (isNaN(req.body.a) || isNaN(req.body.b)) {
+		return res.status(400).send("Bad request");
+	}
+
 	return res.send(`${req.body.a / req.body.b}`);
 });
 
