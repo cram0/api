@@ -84,17 +84,17 @@ Quand vous commencez votre API, on vous demande quel port vous souhaitez utilise
 
 Nous utilisons un fichier `.env` qui sera lu par notre API pour lui donner, à vous de le remplir avec le bon.
 
-### 2 _  Faire sa première route
-
-Cet exercice a pour but de créer une première route de type **GET**, sur l'endpoint `/`, qui va tout simplement renvoyer "Hello World !".
-
-### 3 _ Faire une requête
+### 2 _ Faire une requête
 
 Pour faire une requête il existe plusieurs moyens :
 
 - Navigateur internet : ouvrez une page sur `http://localhost:3030` (Ça ne marchera que pour un type de requête, attention)
 - [curl](https://www.baeldung.com/curl-rest) : `curl -X GET localhost:3030`
 - Postman : se réferer à la [documentation de Postman](https://learning.postman.com/docs/sending-requests/requests/)
+
+#### Faire sa première route
+
+Cet exercice a pour but de créer une première route de type **GET**, sur l'endpoint `/`, qui va tout simplement renvoyer `Hello World !`.
 
 #### Query parameters
 
@@ -148,7 +148,7 @@ On aura en retour :
 
 `6`
 
-### 4 _ Ajouter un middleware
+### 3 _ Ajouter un middleware
 
 Nous avons maintenant envie d'afficher les propriétés de toutes les requêtes qui passent sur notre API,
 pour se faire, Express propose des petits modules appelés **middlewares** qui vont avoir un seul rôle en particulier, et agir en fonction.
@@ -165,7 +165,7 @@ PUIS\
 
 Et non pas l'inverse.
 
-### 5 _ Dog API
+### 4 _ Dog API
 
 Maintenant nous allons faire un nouvel endpoint de type GET `/randog`
 
@@ -177,3 +177,9 @@ La banque de donnée de chien est située dans le fichier `breed_list.json`
 
 On s'attend à ce que vous alliez sur
 `http://localhost:3030/randog` avec votre navigateur et qu'une image de chien s'affiche (à vous de gérer l'affichage de l'image sur le navigateur)
+
+### 5 _ BONUS
+
+Si vous êtes arrivés jusque là, bravo, vous n'avez touché qu'à une infime partie d'une API.
+
+Libre à vous de faire ce que vous voulez, comme par exemple ajouter les informations du chien depuis la banque de données, ajouter une route qui prends la race du chien en query parameter et renvoie les différentes informations de celui ci.
