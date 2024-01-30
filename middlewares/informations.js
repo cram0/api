@@ -1,7 +1,9 @@
 const router = require("express").Router();
 
-router.get("/", (req, res, next) => {
-	console.log(req.method, req.url);
+router.use("/", (req, res, next) => {
+	const today = new Date();
+	const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+	console.log(time, req.method, req.url);
 	next();
 });
 
