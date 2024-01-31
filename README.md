@@ -76,15 +76,15 @@ Vous aurez surement une erreur avec un code **'ERR_SOCKET_BAD_PORT'**, c'est _no
 
 Vous pouvez aller voir à quoi est directement relié `npm run dev` dans le fichier `package.json` mais pas besoin d'y toucher pour l'instant.
 
-## _Exercices
+## Exercices
 
-### 1 _ Definir le port pour Express
+### 1 Definir le port pour Express
 
 Quand vous commencez votre API, on vous demande quel port vous souhaitez utiliser, par défaut pour express on utilise le port **3030**.
 
 Nous utilisons un fichier `.env` qui sera lu par notre API pour lui donner, à vous de le remplir avec le bon.
 
-### 2 _ Faire une requête
+### 2 Faire une requête
 
 Pour faire une requête il existe plusieurs moyens :
 
@@ -92,11 +92,11 @@ Pour faire une requête il existe plusieurs moyens :
 - [curl](https://www.baeldung.com/curl-rest) : `curl -X GET localhost:3030`
 - Postman : se réferer à la [documentation de Postman](https://learning.postman.com/docs/sending-requests/requests/)
 
-#### Faire sa première route
+#### a. Faire sa première route
 
 Cet exercice a pour but de créer une première route de type **GET**, sur l'endpoint `/`, qui va tout simplement renvoyer `Hello World !`.
 
-#### Query parameters
+#### b. Query parameters
 
 Maintenant que vous savez faire une requête, on va faire une nouvelle route :
 
@@ -106,7 +106,7 @@ Sa spécificité est de prendre un [query parameter](https://learning.postman.co
 
 La route devra renvoyer `Hello` + le paramètre donné à `name`.
 
-#### Requêtes POST
+#### c. Requêtes POST
 
 Nous allons maintenant utiliser un nouveau type de requête : **POST**.
 
@@ -130,7 +130,7 @@ Dans ce cas, elle enverra `4`.
 Faites la même chose pour les 3 autres operations de base avec ces endpoints :
 `/sub`, `/div`, `/mul`
 
-#### Nouvelle route
+#### d. Nouvelle route
 
 Faites une route qui écoute les requêtes de type GET.
 
@@ -148,7 +148,7 @@ On aura en retour :
 
 `6`
 
-### 3 _ Ajouter un middleware
+### 3 Ajouter un middleware
 
 Nous avons maintenant envie d'afficher les propriétés de toutes les requêtes qui passent sur notre API,
 pour se faire, Express propose des petits modules appelés **middlewares** qui vont avoir un seul rôle en particulier, et agir en fonction.
@@ -165,7 +165,7 @@ PUIS\
 
 Et non pas l'inverse.
 
-### 4 _ Dog API
+### 4 Dog API
 
 Maintenant nous allons faire un nouvel endpoint de type GET `/randog`
 
