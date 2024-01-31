@@ -8,13 +8,24 @@ Sinon TIG + exclusion du workshop.
 
 ### Installer nodejs et npm
 
-Fedora / RHEL `sudo dnf install nodejs npm`\
----\
-Ubuntu / Debian `sudo apt install nodejs npm`\
----\
-Arch `sudo pacman -Sy nodejs npm`
+Fedora / RHEL 
 
-### Postman (Optionnel, mais le workshop sera plus pratique avec)
+```bash
+sudo dnf install nodejs npm
+````
+
+Ubuntu / Debian 
+
+```bash
+sudo apt install nodejs npm
+```
+
+Arch 
+```bash
+sudo pacman -Sy nodejs npm
+```
+
+### Postman
 
 - Telechargez Postman version **Linux (x64)** sur [le site officiel](https://www.postman.com/downloads/).
 
