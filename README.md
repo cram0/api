@@ -98,9 +98,9 @@ Cet exercice a pour but de créer une première route de type **GET**, sur l'end
 
 #### Query parameters
 
-Maintenant que vous savez faire votre requête, on va faire nouvelle route :
+Maintenant que vous savez faire une requête, on va faire une nouvelle route :
 
-Cette route écoutera les requêtes de type **GET**, l'endpoint sera `/hello`.
+Cette route de type **GET**, aura l'endpoint `/hello`.
 
 Sa spécificité est de prendre un [query parameter](https://learning.postman.com/docs/sending-requests/requests/#sending-parameters) _name_.
 
